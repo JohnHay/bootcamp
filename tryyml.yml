@@ -1,0 +1,12 @@
+---
+- name: Find some stuff
+  hosts: 127.0.0.1
+  connection: local
+  vars:
+    username: "jhay"
+  tasks:
+   - name: Find the hostname
+     debug:
+      var: ansible_hostname
+   - name: Find ipv6 address
+     debug:
