@@ -1,0 +1,7 @@
+---
+- name: Find the hostname
+  debug:
+    var: ansible_hostname
+- name: Find ipv6 address
+  debug:
+    var: ansible_all_ipv6_addresses[1]
